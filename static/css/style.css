@@ -1,0 +1,268 @@
+/* ============================
+   RESET
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================
+   PAGE
+============================ */
+body {
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ============================
+   CALCULATOR CARD
+============================ */
+.calculator {
+    width: 420px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+/* ============================
+   TITLE
+============================ */
+.calculator h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #222;
+}
+
+/* ============================
+   DISPLAY
+============================ */
+.display {
+    width: 100%;
+    height: 65px;
+    margin-bottom: 20px;
+    border: 2px solid #d1d5db;
+    border-radius: 15px;
+    font-size: 32px;
+    text-align: right;
+    padding: 10px 15px;
+    background: #f9fafb;
+    color: #111827;
+    outline: none;
+}
+
+/* ============================
+   BUTTON GRID
+============================ */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* ============================
+   ALL BUTTONS
+============================ */
+.buttons button {
+    height: 65px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    background: #e5e7eb;
+    color: #111827;
+    transition: all 0.2s ease;
+}
+
+.buttons button:hover {
+    background: #d1d5db;
+}
+
+/* ============================
+   BUTTON VARIANTS
+============================ */
+.buttons button.operator {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.buttons button.operator:hover {
+    background: #1d4ed8;
+}
+
+.buttons button.clear {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+.buttons button.clear:hover {
+    background: #dc2626;
+}
+
+.buttons button.scientific {
+    background: #10b981;
+    color: #ffffff;
+}
+
+.buttons button.scientific:hover {
+    background: #059669;
+}
+
+/* ============================
+   CLICK EFFECT
+============================ */
+.buttons button:active {
+   transform: scale(0.92);
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 420px) {
+    .calculator {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .display {
+        height: 60px;
+        font-size: 28px;
+    }
+
+    .buttons button {
+        height: 55px;
+        font-size: 20px;
+    }
+}
+
+/* ============================
+   TEXT ANALYZER
+============================ */
+
+.text-container{
+
+    width:700px;
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.text-container h1{
+
+    text-align:center;
+
+    color:#7C3AED;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.text-container textarea{
+
+    width:100%;
+
+    height:180px;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    resize:none;
+
+    margin-bottom:20px;
+
+}
+
+.text-container label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+.text-container select{
+
+    width:100%;
+
+    padding:12px;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    margin-bottom:20px;
+
+}
+
+.text-container button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#7C3AED;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}
+
+.text-container button:hover{
+
+    background:#6D28D9;
+
+}
+
+.result{
+
+    margin-top:30px;
+
+    background:#F3F0FF;
+
+    border-radius:10px;
+
+    padding:20px;
+
+}
+
+.result h2{
+
+    margin-bottom:10px;
+
+}

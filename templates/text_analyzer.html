@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="text-container">
+
+        <h1>Text Analyzer</h1>
+
+        <p class="subtitle">
+            Analyze your text using different operations.
+        </p>
+
+        <div class="input-section">
+
+            <label for="text">
+                Enter Text
+            </label>
+
+            <textarea
+                id="text"
+                placeholder="Type or paste your text here..."
+                rows="8">
+            </textarea>
+
+        </div>
+
+        <div class="operation-section">
+
+            <label for="operation">
+                Select Operation
+            </label>
+
+            <select id="operation">
+
+                <option value="">-- Select an Operation --</option>
+                <option value="reverse">
+                    Reverse Text
+                </option>
+                <option value="character_count">
+                    Character Count
+                </option>
+                <option value="vowel_count">
+                    Vowel Count
+                </option>
+                
+
+            </select>
+
+        </div>
+
+        <button
+            id="analyzeBtn"
+            type="button">
+
+            Analyze
+
+        </button>
+
+        <div class="result">
+
+            <h2>Result</h2>
+
+            <div id="result">
+
+                Your result will appear here...
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/text.js') }}"></script>
+
+</body>
+</html>

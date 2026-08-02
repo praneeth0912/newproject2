@@ -1,0 +1,160 @@
+
+
+Project Name: Scientific Calculator & Text Utility Web Application
+Version: 1.0
+Project Type: Python Flask Web Application
+Development Methodology: Incremental Development using Git & GitHub
+
+1. Introduction
+The purpose of this project is to develop a web-based application using Python and Flask that provides users with mathematical calculation capabilities and text analysis utilities through a modern, user-friendly interface.
+
+The project will be developed in two phases:
+- Website 1: Scientific Calculator
+- Website 2: Scientific Calculator with Text Utility
+
+2. Project Objectives
+- Develop a responsive web-based scientific calculator.
+- Implement basic arithmetic operations.
+- Implement scientific mathematical functions.
+- Develop a text utility module.
+- Follow a modular software architecture.
+- Maintain the project using Git and GitHub.
+- Learn Flask framework and web application development.
+
+3. Scope
+
+Website 1 – Scientific Calculator
+Basic Operations:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+Website 2 – Scientific Calculator + Text Utility
+Includes all calculator features plus:
+- Count Letters
+- Count Words
+- Count Vowels
+- Reverse Text
+
+4. Technology Stack
+- Python 3.x
+- Flask
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+- Visual Studio Code
+
+5. Initial Project Structure
+
+Scientific_Calculator_Project/
+│
+├── app.py
+├── operations.py
+├── requirements.txt
+├── README.md
+├── templates/
+│   ├── index.html
+│   ├── calculator.html
+│   └── text_analyzer.html
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+├── utils/
+│   └── text_utils.py
+└── docs/
+    └── Project_Initialization.txt
+
+6. Module Description
+
+app.py
+- Initializes Flask
+- Defines routes
+- Handles user requests
+- Calls Python modules
+- Returns responses
+
+operations.py
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+
+text_utils.py
+- Count Letters
+- Count Words
+- Count Vowels
+- Reverse Text
+
+templates/
+- HTML pages rendered by Flask
+
+static/
+- CSS
+- JavaScript
+- Images
+
+7. High-Level Architecture
+
+User
+  |
+Browser
+  |
+HTML + CSS + JavaScript
+  |
+Flask (app.py)
+  |
++-------------------------+
+|                         |
+operations.py      text_utils.py
+|                         |
++-----------+-------------+
+            |
+      Result Returned
+            |
+         Browser
+
+8. Development Roadmap
+
+Phase 1 - Project Initialization
+Phase 2 - Flask Setup
+Phase 3 - Calculator UI
+Phase 4 - Calculator Logic
+Phase 5 - Scientific Functions
+Phase 6 - Text Utility
+Phase 7 - UI Improvements
+Phase 8 - Testing
+Phase 9 - Deployment
+
+9. Git Workflow
+
+Initialize Project Structure
+↓
+Configure Flask
+↓
+Calculator UI
+↓
+Calculator Logic
+↓
+Scientific Functions
+↓
+Text Utility
+↓
+Testing
+↓
+Deployment
+
+10. Expected Outcome
+
+- Scientific Calculator Website
+- Text Utility Website
+- Modular Flask Project
+- Professional Git History
+- Portfolio-ready application
+
